@@ -22,7 +22,7 @@ namespace FlyweightAmazonia
             ProjecaoMaxSombra   = projecaoMaxSombra;
         }
 
-        public void Renderizar(double x, double y, float alturaReal, float larguraReal, int galhos)
+        public void ImprimirInfo(double x, double y, float alturaReal, float larguraReal, int galhos)
         {
             Console.WriteLine(
                 $"[{Especie}] pos=({x:F1},{y:F1}) " +

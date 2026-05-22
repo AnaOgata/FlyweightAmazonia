@@ -35,10 +35,10 @@ namespace FlyweightAmazonia
         public int TotalArvores  => _trees.Count;
         public int TotalEspecies => _factory.TotalTipos;
 
-        public void RenderizarTodas()
+        public void ImprimirTodas()
         {
             foreach (var a in _trees)
-                a.Renderizar();
+                a.ImprimirInfo();
         }
 
         public int GetTotalArvores()  => _trees.Count;

@@ -22,7 +22,7 @@ namespace FlyweightAmazonia
             Tipo          = tipo;
         }
 
-        public void Renderizar() =>
-            Tipo.Renderizar(PosX, PosY, Altura, LarguraTronco, NumGalhos);
+        public void ImprimirInfo() =>
+            Tipo.ImprimirInfo(PosX, PosY, Altura, LarguraTronco, NumGalhos);
     }
 }
