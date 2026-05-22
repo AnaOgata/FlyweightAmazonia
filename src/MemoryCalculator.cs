@@ -63,16 +63,16 @@ namespace FlyweightAmazonia
             Console.WriteLine("3. Objetos criados");
             Console.WriteLine($"- Objetos mutáveis (Tree): {totalArvores,10:N0}");
             Console.WriteLine($"- Objetos imutáveis (TreeType): {totalEspecies,10:N0}");
-            Console.WriteLine($"- Sem Flyweight (1 tipo/obj)  :  0  (dados embutidos)");
+            Console.WriteLine($"- Sem Flyweight (1 tipo/obj):  0  (dados embutidos)");
             Console.WriteLine();
 
             Console.WriteLine("4. Custo total de memória");
-            Console.WriteLine($"- COM Flyweight: {FormatBytes(comFly),14}  ({comFly:N0} bytes)");
-            Console.WriteLine($"- SEM Flyweight: {FormatBytes(semFly),14}  ({semFly:N0} bytes)");
+            Console.WriteLine($"- COM Flyweight: {FormatBytes(comFly),14} ({comFly:N0} bytes)");
+            Console.WriteLine($"- SEM Flyweight: {FormatBytes(semFly),14} ({semFly:N0} bytes)");
             Console.WriteLine();
 
             Console.WriteLine("5. Resultado");
-            Console.WriteLine($"- Economia       : {FormatBytes(economia),14}  ({pct:F1}% menos)");
+            Console.WriteLine($"- Economia: {FormatBytes(economia),14} ({pct:F1}% menos)");
             Console.WriteLine($"- Fator de redução: {(double)semFly/comFly:F2}x menos memória com Flyweight");
             Console.WriteLine();
         }
