@@ -1,3 +1,5 @@
+using System;
+
 namespace FlyweightAmazonia
 {
     public static class MemoryCalculator
@@ -50,29 +52,29 @@ namespace FlyweightAmazonia
             Console.WriteLine();
 
             Console.WriteLine("1. Parâmetros da simulação");
-            Console.WriteLine($"- Árvores plantadas: {totalArvores,10:N0}");
-            Console.WriteLine($"- Espécies únicas: {totalEspecies,10:N0}");
+            Console.WriteLine($"- Árvores plantadas: {totalArvores:N0}");
+            Console.WriteLine($"- Espécies únicas: {totalEspecies:N0}");
             Console.WriteLine();
 
             Console.WriteLine("2. Custo por objeto");
-            Console.WriteLine($"- TreeType (imutável): {BytesPorTreeType,10} bytes (compartilhado por espécie)");
-            Console.WriteLine($"- Tree c/ Flyweight: {BytesPorTreeComFly,10} bytes (só dados mutáveis)");
-            Console.WriteLine($"- Tree s/ Flyweight: {BytesPorTreeSemFly,10} bytes (todos os dados)");
+            Console.WriteLine($"- TreeType (imutável): {BytesPorTreeType} bytes (compartilhado por espécie)");
+            Console.WriteLine($"- Tree c/ Flyweight: {BytesPorTreeComFly} bytes (só dados mutáveis)");
+            Console.WriteLine($"- Tree s/ Flyweight: {BytesPorTreeSemFly} bytes (todos os dados)");
             Console.WriteLine();
 
             Console.WriteLine("3. Objetos criados");
-            Console.WriteLine($"- Objetos mutáveis (Tree): {totalArvores,10:N0}");
-            Console.WriteLine($"- Objetos imutáveis (TreeType): {totalEspecies,10:N0}");
+            Console.WriteLine($"- Objetos mutáveis (Tree): {totalArvores:N0}");
+            Console.WriteLine($"- Objetos imutáveis (TreeType): {totalEspecies:N0}");
             Console.WriteLine($"- Sem Flyweight (1 tipo/obj):  0  (dados embutidos)");
             Console.WriteLine();
 
             Console.WriteLine("4. Custo total de memória");
-            Console.WriteLine($"- COM Flyweight: {FormatBytes(comFly),14} ({comFly:N0} bytes)");
-            Console.WriteLine($"- SEM Flyweight: {FormatBytes(semFly),14} ({semFly:N0} bytes)");
+            Console.WriteLine($"- COM Flyweight: {FormatBytes(comFly)} ({comFly:N0} bytes)");
+            Console.WriteLine($"- SEM Flyweight: {FormatBytes(semFly)} ({semFly:N0} bytes)");
             Console.WriteLine();
 
             Console.WriteLine("5. Resultado");
-            Console.WriteLine($"- Economia: {FormatBytes(economia),14} ({pct:F1}% menos)");
+            Console.WriteLine($"- Economia: {FormatBytes(economia)} ({pct:F1}% menos)");
             Console.WriteLine($"- Fator de redução: {(double)semFly/comFly:F2}x menos memória com Flyweight");
             Console.WriteLine();
         }

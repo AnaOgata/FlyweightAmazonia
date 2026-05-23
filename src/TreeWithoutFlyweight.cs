@@ -1,6 +1,8 @@
 // TreeWithoutFlyweight: modelo INGÊNUO sem o padrão.
 // Cada instância carrega TODOS os dados (mutáveis + imutáveis).
 
+using System;
+
 namespace FlyweightAmazonia
 {
 

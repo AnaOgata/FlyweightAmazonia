@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace FlyweightAmazonia
 {
     public class TreeFactory

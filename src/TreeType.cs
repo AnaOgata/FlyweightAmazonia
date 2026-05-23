@@ -1,3 +1,5 @@
+using System;
+
 namespace FlyweightAmazonia
 {
     public class TreeType
